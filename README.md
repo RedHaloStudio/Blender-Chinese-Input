@@ -1,1 +1,2 @@
-# Blender_Chinese_input-
+# Blender Chinese Input
+解决Blender在Windows平台下每次输入中文都要复制粘贴才能输入的繁琐步骤
