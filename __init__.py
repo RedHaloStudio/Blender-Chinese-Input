@@ -36,7 +36,7 @@ from bpy.props import StringProperty, IntProperty, CollectionProperty, EnumPrope
 import os
 import platform
 
-plat = platform.system.lower()
+plat = platform.system().lower()
 if plat == "windows":
     FontFolder = os.getenv("SystemRoot") + "\\Fonts"
 elif plat == "linux":
