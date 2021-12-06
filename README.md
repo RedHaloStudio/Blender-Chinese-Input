@@ -5,6 +5,11 @@
 https://github.com/RedHaloStudio/Blender-Chinese-Input/releases
 
 #### Changelog
+
+#### 2021-12-06：
+1.添加字体旋转
+2.添加字体选择功能，暂时方法，考虑其它更优方法。
+
 #### 2020-07-28：
 添加了手动添加换行符按钮
 
