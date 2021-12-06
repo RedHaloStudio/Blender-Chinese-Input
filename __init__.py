@@ -34,8 +34,16 @@ import bpy
 from bpy.types import Operator, UIList, PropertyGroup, Panel, Scene
 from bpy.props import StringProperty, IntProperty, CollectionProperty, EnumProperty, PointerProperty, BoolProperty
 import os
+import platform
 
-FontFolder = os.getenv("SystemRoot") + "\\Fonts"
+plat = platform.system.lower()
+if plat == "windows":
+    FontFolder = os.getenv("SystemRoot") + "\\Fonts"
+elif plat == "linux":
+    FontFolder = "/usr/share/fonts"
+else:
+    FontFolder = "/System/Library/Fonts"
+    
 filterFont = ["AIGDT___.TTF", ]
 def getFonts():
     # filters = [".fon"] # 过滤的fbx文件
